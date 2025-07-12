@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="100" viewBox="0 0 320 100" fill="none" style="background-color:transparent;">
+  <defs>
+    <linearGradient id="neonGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00FFFF"/>
+      <stop offset="100%" stop-color="#BB86FC"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="none"/>
+  <g filter="url(#glow)">
+    <circle cx="50" cy="50" r="24" stroke="url(#neonGradient)" stroke-width="2"/>
+    <circle cx="50" cy="34" r="3" fill="url(#neonGradient)"/>
+    <circle cx="64" cy="50" r="3" fill="url(#neonGradient)"/>
+    <circle cx="50" cy="66" r="3" fill="url(#neonGradient)"/>
+    <circle cx="36" cy="50" r="3" fill="url(#neonGradient)"/>
+    <line x1="50" y1="34" x2="64" y2="50" stroke="url(#neonGradient)" stroke-width="1"/>
+    <line x1="50" y1="34" x2="36" y2="50" stroke="url(#neonGradient)" stroke-width="1"/>
+    <line x1="36" y1="50" x2="50" y2="66" stroke="url(#neonGradient)" stroke-width="1"/>
+    <line x1="64" y1="50" x2="50" y2="66" stroke="url(#neonGradient)" stroke-width="1"/>
+  </g>
+  <text x="100" y="60" fill="url(#neonGradient)" font-family="Orbitron, sans-serif" font-size="28" filter="url(#glow)">
+    NeuroCareer
+  </text>
+</svg>
