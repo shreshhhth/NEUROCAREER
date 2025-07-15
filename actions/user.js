@@ -7,9 +7,7 @@ import { generateAiInsights } from "./dashboard";
 export async function updateUser(data) {
     const { userId } = await auth();
     // console.log(userId);
-    const authResult = await auth();
-    console.log("userId", userId);
-    console.log("typeof userId", typeof userId.userId);
+ 
 
 
     if (!userId) throw new Error("Unauthorized");
